@@ -69,64 +69,94 @@ const { title, description = "Your private space to connect and grow" } = Astro.
 
 							<div class="w-px h-4 bg-gray-300"></div>
 
+							<!-- Language Selector with DaisyUI Dropdown -->
+							<div class="dropdown dropdown-end">
+								<div tabindex="0" role="button" class="btn btn-ghost btn-sm text-gray-600 hover:text-primary no-animation" id="language-selector">
+									<span id="selected-language">🇪🇸 ES</span>
+									<svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+									</svg>
+								</div>
+								<ul tabindex="0" class="dropdown-content menu bg-white rounded-box z-[1] w-32 p-2 shadow border border-gray-200">
+									<li><a class="language-option" data-lang="es">🇪🇸 ES</a></li>
+									<li><a class="language-option" data-lang="en">🇺🇸 EN</a></li>
+									<li><a class="language-option" data-lang="fr">🇫🇷 FR</a></li>
+								</ul>
+							</div>
+
+							<div class="w-px h-4 bg-gray-300"></div>
+
 							<!-- Access Links -->
 							<div class="flex items-center space-x-4 text-gray-600">
-								<a href="/login" class="hover:text-primary transition-colors">Login</a>
-								<a href="/register" class="hover:text-primary transition-colors">Register</a>
+								<a href="/login" class="btn btn-ghost btn-sm text-gray-600 hover:text-primary no-animation">Login</a>
+								<a href="/register" class="btn btn-ghost btn-sm text-gray-600 hover:text-primary no-animation">Register</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- Main Navigation -->
-			<div class="bg-white border-b border-gray-200">
+			<!-- Main Navigation with DaisyUI Navbar -->
+			<div class="navbar bg-white border-b border-gray-200 min-h-16">
 				<div class="container mx-auto px-6">
-					<div class="flex items-center justify-between h-16">
+					<div class="navbar-start">
 						<!-- Logo -->
-						<div class="flex items-center">
-							<a href="/" class="text-2xl font-bold text-gray-900 hover:text-primary transition-colors">
-								WeAreUnity.net
-							</a>
-						</div>
+						<a href="/" class="btn btn-ghost text-2xl font-bold text-gray-900 hover:text-primary normal-case">
+							WeAreUnity.net
+						</a>
+					</div>
 
+					<div class="navbar-center hidden md:flex">
 						<!-- Navigation Menu -->
-						<nav class="hidden md:flex items-center space-x-8">
-							<a href="/about" class="text-gray-700 hover:text-primary transition-colors font-medium py-2 border-b-2 border-transparent hover:border-primary">About</a>
-							<a href="/features" class="text-gray-700 hover:text-primary transition-colors font-medium py-2 border-b-2 border-transparent hover:border-primary">Features</a>
-							<a href="/pricing" class="text-gray-700 hover:text-primary transition-colors font-medium py-2 border-b-2 border-transparent hover:border-primary">Pricing</a>
-							<a href="/faq" class="text-gray-700 hover:text-primary transition-colors font-medium py-2 border-b-2 border-transparent hover:border-primary">FAQ</a>
-							<a href="/contact" class="text-gray-700 hover:text-primary transition-colors font-medium py-2 border-b-2 border-transparent hover:border-primary">Contact</a>
-						</nav>
+						<ul class="menu menu-horizontal px-1">
+							<li><a href="/about" class="text-gray-700 hover:text-primary font-medium nav-link">About</a></li>
+							<li><a href="/features" class="text-gray-700 hover:text-primary font-medium nav-link">Features</a></li>
+							<li><a href="/pricing" class="text-gray-700 hover:text-primary font-medium nav-link">Pricing</a></li>
+							<li><a href="/faq" class="text-gray-700 hover:text-primary font-medium nav-link">FAQ</a></li>
+							<li><a href="/contact" class="text-gray-700 hover:text-primary font-medium nav-link">Contact</a></li>
+						</ul>
+					</div>
 
+					<div class="navbar-end">
 						<!-- CTA Button -->
-						<div class="hidden md:flex items-center space-x-4">
-							<button class="bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-								Create Community
-							</button>
-						</div>
+						<button class="btn btn-primary text-white font-medium hidden md:flex">
+							Create Community
+						</button>
 
 						<!-- Mobile Menu Button -->
-						<button class="md:hidden p-2 text-gray-600 hover:text-primary transition-colors" id="mobile-menu-button">
+						<button class="btn btn-ghost md:hidden" id="mobile-menu-button">
 							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
 							</svg>
 						</button>
 					</div>
+				</div>
 
-					<!-- Mobile Menu -->
-					<div class="md:hidden hidden pb-4" id="mobile-menu">
-						<div class="space-y-2 pt-4 border-t border-gray-200">
-							<a href="/about" class="block px-4 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-lg">About</a>
-							<a href="/features" class="block px-4 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-lg">Features</a>
-							<a href="/pricing" class="block px-4 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-lg">Pricing</a>
-							<a href="/faq" class="block px-4 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-lg">FAQ</a>
-							<a href="/contact" class="block px-4 py-2 text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors font-medium rounded-lg">Contact</a>
-							<div class="pt-2 mt-2 border-t border-gray-200">
-								<button class="w-full bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-									Create Community
-								</button>
-							</div>
+				<!-- Mobile Menu -->
+				<div class="md:hidden hidden" id="mobile-menu">
+					<div class="container mx-auto px-6 pb-4">
+						<ul class="menu menu-vertical bg-white rounded-box w-full border-t border-gray-200">
+							<li><a href="/about" class="text-gray-700 hover:text-primary font-medium mobile-nav-link">About</a></li>
+							<li><a href="/features" class="text-gray-700 hover:text-primary font-medium mobile-nav-link">Features</a></li>
+							<li><a href="/pricing" class="text-gray-700 hover:text-primary font-medium mobile-nav-link">Pricing</a></li>
+							<li><a href="/faq" class="text-gray-700 hover:text-primary font-medium mobile-nav-link">FAQ</a></li>
+							<li><a href="/contact" class="text-gray-700 hover:text-primary font-medium mobile-nav-link">Contact</a></li>
+						</ul>
+
+						<!-- Mobile Language Selector -->
+						<div class="mt-4">
+							<label class="block text-sm font-medium text-gray-700 mb-2">Language</label>
+							<select class="select select-bordered w-full text-sm" id="mobile-language-selector">
+								<option value="es">🇪🇸 Español</option>
+								<option value="en">🇺🇸 English</option>
+								<option value="fr">🇫🇷 Français</option>
+							</select>
+						</div>
+
+						<div class="mt-4">
+							<button class="btn btn-primary w-full text-white font-medium">
+								Create Community
+							</button>
 						</div>
 					</div>
 				</div>
@@ -168,14 +198,73 @@ const { title, description = "Your private space to connect and grow" } = Astro.
 			// Active page highlighting
 			document.addEventListener('DOMContentLoaded', function() {
 				const currentPath = window.location.pathname;
-				const navLinks = document.querySelectorAll('nav a');
+				const navLinks = document.querySelectorAll('.nav-link');
+				const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
+				// Highlight active desktop nav links
 				navLinks.forEach(link => {
 					if (link.getAttribute('href') === currentPath) {
-						link.classList.add('text-primary', 'border-primary');
-						link.classList.remove('border-transparent');
+						link.classList.add('text-primary');
+						link.classList.remove('text-gray-700');
+						// Add underline effect
+						link.style.borderBottom = '2px solid';
+						link.style.borderColor = 'var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)))';
 					}
 				});
+
+				// Highlight active mobile nav links
+				mobileNavLinks.forEach(link => {
+					if (link.getAttribute('href') === currentPath) {
+						link.classList.add('text-primary');
+						link.classList.remove('text-gray-700');
+					}
+				});
+
+				// Language selector synchronization for dropdown
+				const languageOptions = document.querySelectorAll('.language-option');
+				const selectedLanguageText = document.getElementById('selected-language');
+				const mobileLanguageSelector = document.getElementById('mobile-language-selector');
+
+				// Desktop language dropdown functionality
+				languageOptions.forEach(option => {
+					option.addEventListener('click', function(e) {
+						e.preventDefault();
+						const selectedLang = this.getAttribute('data-lang');
+						const selectedText = this.textContent;
+
+						// Update dropdown button text
+						if (selectedLanguageText) {
+							selectedLanguageText.textContent = selectedText;
+						}
+
+						// Sync with mobile selector
+						if (mobileLanguageSelector) {
+							mobileLanguageSelector.value = selectedLang;
+						}
+
+						// Close dropdown
+						const dropdown = document.activeElement;
+						if (dropdown) dropdown.blur();
+
+						console.log('Language changed to:', selectedLang);
+					});
+				});
+
+				// Mobile language selector change
+				if (mobileLanguageSelector) {
+					mobileLanguageSelector.addEventListener('change', function() {
+						const selectedValue = this.value;
+						const selectedOption = this.options[this.selectedIndex];
+						const shortText = selectedOption.textContent.split(' ')[0] + ' ' + selectedValue.toUpperCase();
+
+						// Update desktop dropdown text
+						if (selectedLanguageText) {
+							selectedLanguageText.textContent = shortText;
+						}
+
+						console.log('Language changed to:', selectedValue);
+					});
+				}
 			});
 		</script>
 	</body>

@@ -4,9 +4,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout title="WeAreUnity.net - Build Your Private Community" description="Create and manage private online communities with powerful tools designed for growth and engagement.">
 	<!-- Hero Section -->
-	<section class="min-h-[85vh] bg-gradient-to-br from-indigo-50 via-white to-purple-50 flex items-center relative overflow-hidden pt-8">
+	<div class="hero min-h-[85vh] bg-gradient-to-br from-indigo-50 via-white to-purple-50 relative overflow-hidden">
 		<!-- Animated Grid Background -->
-		<div class="absolute inset-0 opacity-30">
+		<div class="hero-overlay opacity-30">
 			<div class="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:14px_24px] animate-pulse"></div>
 			<div class="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-secondary/5"></div>
 		</div>
@@ -23,12 +23,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<div class="absolute top-1/3 left-1/6 w-8 h-8 bg-gradient-to-r from-primary/15 to-secondary/15 rounded animate-float"></div>
 		</div>
 
-		<div class="container mx-auto px-6 relative z-10">
+		<div class="hero-content container mx-auto px-6">
 			<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 				<!-- Left Column - Text Content -->
 				<div class="text-center lg:text-left animate-fade-in-up">
-					<div class="inline-flex items-center gap-2 mb-6 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-6 py-3 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-fade-in">
-						<div class="flex -space-x-2">
+					<div class="badge badge-lg badge-ghost bg-white/80 backdrop-blur-sm border border-gray-200 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-fade-in mb-6 px-6 py-4">
+						<div class="flex -space-x-2 mr-2">
 							<div class="w-6 h-6 bg-primary rounded-full border-2 border-white animate-pulse"></div>
 							<div class="w-6 h-6 bg-secondary rounded-full border-2 border-white animate-pulse" style="animation-delay: 0.2s;"></div>
 							<div class="w-6 h-6 bg-green-500 rounded-full border-2 border-white animate-pulse" style="animation-delay: 0.4s;"></div>
@@ -48,7 +48,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					</p>
 
 					<div class="flex flex-col sm:flex-row gap-4 mb-10 justify-center lg:justify-start animate-fade-in-up" style="animation-delay: 0.4s;">
-						<button class="group bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-10 py-4 rounded-2xl text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg relative overflow-hidden">
+						<button class="btn btn-primary btn-lg group bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-10 rounded-2xl text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg relative overflow-hidden">
 							<div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 							<span class="flex items-center justify-center gap-2 relative z-10">
 								Start Building Free
@@ -57,7 +57,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 								</svg>
 							</span>
 						</button>
-						<button class="group bg-white text-gray-900 px-10 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg border border-gray-200 hover:shadow-xl hover:scale-105 relative overflow-hidden">
+						<button class="btn btn-outline btn-lg group bg-white text-gray-900 px-10 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg border border-gray-200 hover:shadow-xl hover:scale-105 relative overflow-hidden">
 							<div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 							<span class="relative z-10 flex items-center justify-center gap-2">
 								Watch Demo
@@ -190,7 +190,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<!-- Trusted By Section -->
 	<section class="py-16 bg-white border-b border-gray-100">
@@ -229,42 +229,60 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				<p class="text-xl md:text-2xl text-gray-600 mb-12">
 					WeAreUnity gives you the freedom to grow without limits.
 				</p>
-				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-					<div class="text-center group">
-						<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-							<div class="text-2xl font-bold text-white">∞</div>
+				<div class="stats stats-vertical lg:stats-horizontal shadow-lg bg-white rounded-2xl overflow-hidden">
+					<div class="stat hover:scale-105 transition-transform duration-300">
+						<div class="stat-figure text-primary">
+							<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg">
+								<div class="text-2xl font-bold text-white">∞</div>
+							</div>
 						</div>
-						<p class="text-gray-700 font-semibold">Unlimited Members</p>
+						<div class="stat-title text-gray-600">Members</div>
+						<div class="stat-value text-primary">Unlimited</div>
 					</div>
-					<div class="text-center group">
-						<div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-							<div class="text-2xl font-bold text-white">∞</div>
+					<div class="stat hover:scale-105 transition-transform duration-300">
+						<div class="stat-figure text-secondary">
+							<div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center shadow-lg">
+								<div class="text-2xl font-bold text-white">∞</div>
+							</div>
 						</div>
-						<p class="text-gray-700 font-semibold">Unlimited Communities</p>
+						<div class="stat-title text-gray-600">Communities</div>
+						<div class="stat-value text-gray-600">Unlimited</div>
 					</div>
-					<div class="text-center group">
-						<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-							<div class="text-2xl font-bold text-white">∞</div>
+					<div class="stat hover:scale-105 transition-transform duration-300">
+						<div class="stat-figure text-primary">
+							<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg">
+								<div class="text-2xl font-bold text-white">∞</div>
+							</div>
 						</div>
-						<p class="text-gray-700 font-semibold">Unlimited Groups</p>
+						<div class="stat-title text-gray-600">Groups</div>
+						<div class="stat-value text-primary">Unlimited</div>
 					</div>
-					<div class="text-center group">
-						<div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-							<div class="text-2xl font-bold text-white">∞</div>
+					<div class="stat hover:scale-105 transition-transform duration-300">
+						<div class="stat-figure text-secondary">
+							<div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center shadow-lg">
+								<div class="text-2xl font-bold text-white">∞</div>
+							</div>
 						</div>
-						<p class="text-gray-700 font-semibold">Unlimited Events</p>
+						<div class="stat-title text-gray-600">Events</div>
+						<div class="stat-value text-gray-600">Unlimited</div>
 					</div>
-					<div class="text-center group">
-						<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-							<div class="text-2xl font-bold text-white">∞</div>
+					<div class="stat hover:scale-105 transition-transform duration-300">
+						<div class="stat-figure text-primary">
+							<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg">
+								<div class="text-2xl font-bold text-white">∞</div>
+							</div>
 						</div>
-						<p class="text-gray-700 font-semibold">Unlimited Admins</p>
+						<div class="stat-title text-gray-600">Admins</div>
+						<div class="stat-value text-primary">Unlimited</div>
 					</div>
-					<div class="text-center group">
-						<div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-							<div class="text-2xl font-bold text-white">∞</div>
+					<div class="stat hover:scale-105 transition-transform duration-300">
+						<div class="stat-figure text-secondary">
+							<div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center shadow-lg">
+								<div class="text-2xl font-bold text-white">∞</div>
+							</div>
 						</div>
-						<p class="text-gray-700 font-semibold">Unlimited Possibilities</p>
+						<div class="stat-title text-gray-600">Possibilities</div>
+						<div class="stat-value text-gray-600">Unlimited</div>
 					</div>
 				</div>
 			</div>
@@ -365,8 +383,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 							</div>
 
 							<!-- Floating notification -->
-							<div class="absolute -top-3 -right-3 bg-green-500 text-white px-3 py-1 rounded-full text-sm shadow-lg">
-								3 new messages
+							<div class="indicator absolute -top-3 -right-3">
+								<span class="indicator-item badge badge-success">3</span>
+								<div class="bg-base-100 text-gray-700 px-3 py-1 rounded-full text-sm shadow-lg border border-gray-200">
+									new messages
+								</div>
 							</div>
 						</div>
 					</div>
@@ -421,6 +442,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		</div>
 	</section>
 
+	<div class="divider max-w-6xl mx-auto"></div>
+
 	<!-- Community Features Section -->
 	<section class="py-20 bg-gray-50">
 		<div class="container mx-auto px-6">
@@ -432,96 +455,114 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				</div>
 				
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
-							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
-							</svg>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+						<div class="card-body">
+							<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
+								<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<h2 class="card-title text-lg">User Profiles & Dashboard</h2>
+							<p class="text-gray-600 text-sm">Customizable user profiles with community dashboards for members to manage their experience.</p>
 						</div>
-						<h4 class="text-lg font-semibold text-gray-900 mb-2">User Profiles & Dashboard</h4>
-						<p class="text-gray-600 text-sm">Customizable user profiles with community dashboards for members to manage their experience.</p>
 					</div>
 
-					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
-							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
-							</svg>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+						<div class="card-body">
+							<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+								<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<h2 class="card-title text-lg">Discussion Forums</h2>
+							<p class="text-gray-600 text-sm">Rich discussion forums with threaded conversations, reactions, and moderation tools.</p>
 						</div>
-						<h4 class="text-lg font-semibold text-gray-900 mb-2">Discussion Forums</h4>
-						<p class="text-gray-600 text-sm">Rich discussion forums with threaded conversations, reactions, and moderation tools.</p>
 					</div>
 
-					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
-							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-								<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
-							</svg>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+						<div class="card-body">
+							<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
+								<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+								</svg>
+							</div>
+							<h2 class="card-title text-lg">Social Groups & Events</h2>
+							<p class="text-gray-600 text-sm">Create unlimited groups and events to organize your community around specific interests.</p>
 						</div>
-						<h4 class="text-lg font-semibold text-gray-900 mb-2">Social Groups & Events</h4>
-						<p class="text-gray-600 text-sm">Create unlimited groups and events to organize your community around specific interests.</p>
 					</div>
 
-					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
-							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-								<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-								<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-							</svg>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+						<div class="card-body">
+							<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+								<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+									<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+								</svg>
+							</div>
+							<h2 class="card-title text-lg">Direct Messaging</h2>
+							<p class="text-gray-600 text-sm">Private messaging system with real-time notifications and file sharing capabilities.</p>
 						</div>
-						<h4 class="text-lg font-semibold text-gray-900 mb-2">Direct Messaging</h4>
-						<p class="text-gray-600 text-sm">Private messaging system with real-time notifications and file sharing capabilities.</p>
 					</div>
 
-					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
-							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-							</svg>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+						<div class="card-body">
+							<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
+								<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<h2 class="card-title text-lg">Activity Feeds</h2>
+							<p class="text-gray-600 text-sm">Real-time activity streams to keep members engaged and informed about community updates.</p>
 						</div>
-						<h4 class="text-lg font-semibold text-gray-900 mb-2">Activity Feeds</h4>
-						<p class="text-gray-600 text-sm">Real-time activity streams to keep members engaged and informed about community updates.</p>
 					</div>
 
-					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
-							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
-							</svg>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+						<div class="card-body">
+							<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+								<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<h2 class="card-title text-lg">Social Search & Discovery</h2>
+							<p class="text-gray-600 text-sm">Powerful search functionality to help members find content, people, and groups within your community.</p>
 						</div>
-						<h4 class="text-lg font-semibold text-gray-900 mb-2">Social Search & Discovery</h4>
-						<p class="text-gray-600 text-sm">Powerful search functionality to help members find content, people, and groups within your community.</p>
 					</div>
 
-					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
-							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-							</svg>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+						<div class="card-body">
+							<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
+								<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<h2 class="card-title text-lg">File Sharing & Media</h2>
+							<p class="text-gray-600 text-sm">Upload and share files, images, videos, and documents with built-in media management tools.</p>
 						</div>
-						<h4 class="text-lg font-semibold text-gray-900 mb-2">File Sharing & Media</h4>
-						<p class="text-gray-600 text-sm">Upload and share files, images, videos, and documents with built-in media management tools.</p>
 					</div>
 
-					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
-							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-								<path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-								<path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a2 2 0 002 2h8a2 2 0 002-2V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a2 2 0 114 0v2a2 2 0 11-4 0V9zm2-3a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1V7a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
-							</svg>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+						<div class="card-body">
+							<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+								<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+									<path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a2 2 0 002 2h8a2 2 0 002-2V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a2 2 0 114 0v2a2 2 0 11-4 0V9zm2-3a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1V7a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<h2 class="card-title text-lg">Job Boards & Networking</h2>
+							<p class="text-gray-600 text-sm">Built-in job boards and professional networking features to connect community members.</p>
 						</div>
-						<h4 class="text-lg font-semibold text-gray-900 mb-2">Job Boards & Networking</h4>
-						<p class="text-gray-600 text-sm">Built-in job boards and professional networking features to connect community members.</p>
 					</div>
 
-					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
-							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"></path>
-							</svg>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+						<div class="card-body">
+							<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
+								<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<h2 class="card-title text-lg">Analytics & Insights</h2>
+							<p class="text-gray-600 text-sm">Detailed analytics to track community growth, engagement, and member behavior patterns.</p>
 						</div>
-						<h4 class="text-lg font-semibold text-gray-900 mb-2">Analytics & Insights</h4>
-						<p class="text-gray-600 text-sm">Detailed analytics to track community growth, engagement, and member behavior patterns.</p>
 					</div>
 				</div>
 			</div>
@@ -603,7 +644,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 						<div class="mt-6 pt-4 border-t border-gray-200">
 							<div class="flex items-center justify-between text-sm">
 								<span class="text-gray-600">3 events today</span>
-								<button class="text-primary font-medium hover:text-primary/80">View all events →</button>
+								<button class="btn btn-link text-primary font-medium hover:text-primary/80">View all events →</button>
 							</div>
 						</div>
 					</div>
@@ -671,7 +712,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 								</div>
 							</div>
 							<p class="text-sm text-white/90 mb-4">Automatically send follow-up surveys, share resources, and track engagement after each event.</p>
-							<button class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg text-sm font-medium transition">
+							<button class="btn btn-ghost btn-sm bg-white/20 hover:bg-white/30 text-white border-none">
 								Learn More
 							</button>
 						</div>
@@ -1002,6 +1043,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		</div>
 	</section>
 
+	<div class="divider max-w-6xl mx-auto"></div>
+
 	<!-- Testimonials Section -->
 	<section class="py-20 bg-gray-50">
 		<div class="container mx-auto px-6">
@@ -1014,45 +1057,59 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				</p>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-					<div class="flex items-center mb-4">
-						<div class="w-12 h-12 bg-primary rounded-full mr-4 flex items-center justify-center text-white font-semibold">
-							SJ
+				<div class="card bg-base-100 shadow-xl">
+					<div class="card-body">
+						<div class="flex items-center mb-4">
+							<div class="avatar">
+								<div class="w-12 rounded-full bg-primary flex items-center justify-center text-white font-semibold">
+									SJ
+								</div>
+							</div>
+							<div class="ml-4">
+								<h2 class="card-title text-lg">Sarah Johnson</h2>
+								<p class="text-gray-600 text-sm">NGO Director</p>
+							</div>
 						</div>
-						<div>
-							<h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
-							<p class="text-gray-600 text-sm">NGO Director</p>
-						</div>
+						<p class="text-gray-700 italic">"WeAreUnity.net helped us build a thriving community of over 500 volunteers. The platform is intuitive and our engagement has increased by 300%."</p>
 					</div>
-					<p class="text-gray-700 italic">"WeAreUnity.net helped us build a thriving community of over 500 volunteers. The platform is intuitive and our engagement has increased by 300%."</p>
 				</div>
-				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-					<div class="flex items-center mb-4">
-						<div class="w-12 h-12 bg-gray-600 rounded-full mr-4 flex items-center justify-center text-white font-semibold">
-							MC
+				<div class="card bg-base-100 shadow-xl">
+					<div class="card-body">
+						<div class="flex items-center mb-4">
+							<div class="avatar">
+								<div class="w-12 rounded-full bg-gray-600 flex items-center justify-center text-white font-semibold">
+									MC
+								</div>
+							</div>
+							<div class="ml-4">
+								<h2 class="card-title text-lg">Michael Chen</h2>
+								<p class="text-gray-600 text-sm">Tech Startup CEO</p>
+							</div>
 						</div>
-						<div>
-							<h4 class="font-semibold text-gray-900">Michael Chen</h4>
-							<p class="text-gray-600 text-sm">Tech Startup CEO</p>
-						</div>
+						<p class="text-gray-700 italic">"The customization options are incredible. We created a unique space that perfectly reflects our company culture and values."</p>
 					</div>
-					<p class="text-gray-700 italic">"The customization options are incredible. We created a unique space that perfectly reflects our company culture and values."</p>
 				</div>
-				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-					<div class="flex items-center mb-4">
-						<div class="w-12 h-12 bg-primary rounded-full mr-4 flex items-center justify-center text-white font-semibold">
-							ER
+				<div class="card bg-base-100 shadow-xl">
+					<div class="card-body">
+						<div class="flex items-center mb-4">
+							<div class="avatar">
+								<div class="w-12 rounded-full bg-primary flex items-center justify-center text-white font-semibold">
+									ER
+								</div>
+							</div>
+							<div class="ml-4">
+								<h2 class="card-title text-lg">Emma Rodriguez</h2>
+								<p class="text-gray-600 text-sm">Community Manager</p>
+							</div>
 						</div>
-						<div>
-							<h4 class="font-semibold text-gray-900">Emma Rodriguez</h4>
-							<p class="text-gray-600 text-sm">Community Manager</p>
-						</div>
+						<p class="text-gray-700 italic">"Managing our community has never been easier. The tools are powerful yet simple to use, and the support team is amazing."</p>
 					</div>
-					<p class="text-gray-700 italic">"Managing our community has never been easier. The tools are powerful yet simple to use, and the support team is amazing."</p>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<div class="divider max-w-6xl mx-auto"></div>
 
 	<!-- Pricing Section -->
 	<section class="py-20 bg-white">
@@ -1070,11 +1127,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					<!-- Currency Filter -->
 					<div class="flex items-center gap-2">
 						<span class="text-sm font-medium text-gray-700">Currency:</span>
-						<div class="flex bg-gray-100 rounded-lg p-1">
-							<button class="currency-btn px-4 py-2 text-sm font-medium rounded-md transition-colors active bg-white text-primary shadow-sm" data-currency="eur">
+						<div class="join">
+							<button class="btn btn-sm join-item currency-btn active btn-primary" data-currency="eur">
 								EUR (€)
 							</button>
-							<button class="currency-btn px-4 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-800" data-currency="usd">
+							<button class="btn btn-sm join-item btn-ghost currency-btn text-gray-600 hover:text-gray-800" data-currency="usd">
 								USD ($)
 							</button>
 						</div>
@@ -1083,13 +1140,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					<!-- Billing Period Filter -->
 					<div class="flex items-center gap-2">
 						<span class="text-sm font-medium text-gray-700">Billing:</span>
-						<div class="flex bg-gray-100 rounded-lg p-1">
-							<button class="period-btn px-4 py-2 text-sm font-medium rounded-md transition-colors active bg-white text-primary shadow-sm" data-period="monthly">
+						<div class="join">
+							<button class="btn btn-sm join-item period-btn active btn-primary" data-period="monthly">
 								Monthly
 							</button>
-							<button class="period-btn px-4 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-800" data-period="yearly">
+							<button class="btn btn-sm join-item btn-ghost period-btn text-gray-600 hover:text-gray-800" data-period="yearly">
 								Yearly
-								<span class="ml-1 text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">Save 20%</span>
+								<span class="badge badge-success badge-sm ml-1">Save 20%</span>
 							</button>
 						</div>
 					</div>
@@ -1099,9 +1156,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<div class="max-w-7xl mx-auto">
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 					<!-- Starter Plan -->
-					<div class="border border-gray-200 rounded-2xl p-8 relative hover:shadow-lg transition-shadow">
-						<div class="text-center mb-8">
-							<h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+						<div class="card-body text-center">
+							<h2 class="card-title justify-center text-2xl mb-2">Starter</h2>
 							<p class="text-gray-600 mb-6">Perfect for small groups and communities</p>
 							<div class="mb-6">
 								<span class="text-5xl font-bold text-gray-900">
@@ -1110,9 +1167,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 								<span class="text-gray-600 text-lg">/<span class="price-period">month</span></span>
 								<div class="text-sm text-green-600 mt-1 yearly-savings hidden">Save <span class="savings-currency">€</span><span class="savings-amount" data-eur="60" data-usd="72">60</span> with yearly plan</div>
 							</div>
-							<button class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition">
-								Get Started
-							</button>
+							<div class="card-actions justify-center">
+								<button class="btn btn-primary w-full">
+									Get Started
+								</button>
+							</div>
 						</div>
 						<div class="space-y-4">
 							<h4 class="font-semibold text-gray-900">What's included:</h4>
@@ -1158,12 +1217,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					</div>
 
 					<!-- Professional Plan -->
-					<div class="border-2 border-primary rounded-2xl p-8 relative hover:shadow-lg transition-shadow scale-105">
-						<div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold">
+					<div class="card bg-base-100 shadow-2xl hover:shadow-3xl transition-shadow scale-105 border-2 border-primary">
+						<div class="badge badge-primary absolute -top-4 left-1/2 transform -translate-x-1/2 text-white px-6 py-3">
 							Most Popular
 						</div>
-						<div class="text-center mb-8">
-							<h3 class="text-2xl font-bold text-gray-900 mb-2">Professional</h3>
+						<div class="card-body text-center">
+							<h2 class="card-title justify-center text-2xl mb-2">Professional</h2>
 							<p class="text-gray-600 mb-6">For NGOs, associations, and medium businesses</p>
 							<div class="mb-6">
 								<span class="text-5xl font-bold text-gray-900">
@@ -1172,9 +1231,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 								<span class="text-gray-600 text-lg">/<span class="price-period">month</span></span>
 								<div class="text-sm text-green-600 mt-1 yearly-savings hidden">Save <span class="savings-currency">€</span><span class="savings-amount" data-eur="204" data-usd="228">204</span> with yearly plan</div>
 							</div>
-							<button class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition">
-								Get Started
-							</button>
+							<div class="card-actions justify-center">
+								<button class="btn btn-primary w-full">
+									Get Started
+								</button>
+							</div>
 						</div>
 						<div class="space-y-4">
 							<h4 class="font-semibold text-gray-900">Everything in Starter, plus:</h4>
@@ -1226,17 +1287,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					</div>
 
 					<!-- Enterprise Plan -->
-					<div class="border border-gray-200 rounded-2xl p-8 relative hover:shadow-lg transition-shadow">
-						<div class="text-center mb-8">
-							<h3 class="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+					<div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+						<div class="card-body text-center">
+							<h2 class="card-title justify-center text-2xl mb-2">Enterprise</h2>
 							<p class="text-gray-600 mb-6">For large communities with dedicated support</p>
 							<div class="mb-6">
 								<span class="text-4xl font-bold text-gray-900">Custom</span>
 								<div class="text-sm text-gray-600 mt-2">Contact us for pricing</div>
 							</div>
-							<button class="w-full bg-gray-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-800 transition">
-								Contact Sales
-							</button>
+							<div class="card-actions justify-center">
+								<button class="btn btn-neutral w-full">
+									Contact Sales
+								</button>
+							</div>
 						</div>
 						<div class="space-y-4">
 							<h4 class="font-semibold text-gray-900">Everything in Professional, plus:</h4>
@@ -1297,10 +1360,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 						Join thousands of organizations using WeAreUnity.net to create engaging, private communities that grow and thrive.
 					</p>
 					<div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-						<button class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+						<button class="btn btn-primary btn-lg px-8 py-4 bg-white text-primary border-none hover:bg-gray-100 shadow-lg">
 							Start Free Trial
 						</button>
-						<button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/10 transition-colors">
+						<button class="btn btn-outline btn-lg px-8 py-4 border-2 border-white text-white hover:bg-white/10">
 							Schedule Demo
 						</button>
 					</div>
