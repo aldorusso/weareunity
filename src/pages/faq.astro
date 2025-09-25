@@ -1,0 +1,244 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Frequently Asked Questions - WeAreUnity.net" description="Get answers to common questions about WeAreUnity.net's community platform features and services.">
+	<!-- Hero Section -->
+	<section class="py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
+		<div class="container mx-auto px-6">
+			<div class="max-w-4xl mx-auto text-center">
+				<h1 class="text-5xl font-bold text-gray-900 mb-6">
+					Frequently Asked Questions
+				</h1>
+				<p class="text-xl text-gray-600 mb-8">
+					Find answers to the most common questions about our service
+				</p>
+				<div class="max-w-md mx-auto">
+					<div class="relative">
+						<input type="text" placeholder="Search questions..." class="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none">
+						<svg class="w-5 h-5 text-gray-400 absolute left-4 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Categories -->
+	<section class="py-12 bg-white border-b border-gray-100">
+		<div class="container mx-auto px-6">
+			<div class="max-w-4xl mx-auto">
+				<div class="flex flex-wrap gap-4 justify-center">
+					<button class="px-6 py-2 bg-primary text-white rounded-full font-medium">All</button>
+					<button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition">Getting Started</button>
+					<button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition">Features</button>
+					<button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition">Pricing</button>
+					<button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition">Technical</button>
+					<button class="px-6 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition">Support</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Content -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-6">
+			<div class="max-w-4xl mx-auto space-y-4">
+				<!-- Getting Started -->
+				<div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+					<button class="w-full p-6 text-left flex justify-between items-center faq-toggle">
+						<h3 class="text-lg font-semibold text-gray-900">How do I get started with WeAreUnity.net?</h3>
+						<svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+						</svg>
+					</button>
+					<div class="px-6 pb-6 text-gray-600 faq-content hidden">
+						Getting started is easy! Simply sign up for a free 14-day trial, choose your plan, and our onboarding team will help you set up your community. We'll guide you through customizing your space, inviting members, and configuring your settings. Most communities are up and running within 24 hours.
+					</div>
+				</div>
+
+				<div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+					<button class="w-full p-6 text-left flex justify-between items-center faq-toggle">
+						<h3 class="text-lg font-semibold text-gray-900">What's included in each pricing plan?</h3>
+						<svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+						</svg>
+					</button>
+					<div class="px-6 pb-6 text-gray-600 faq-content hidden">
+						Each plan includes different user limits, advanced features, and support levels. The Starter plan is perfect for small groups with up to 100 members, Professional suits medium organizations with up to 1,000 members, and Enterprise offers unlimited members with custom features for large communities. Check our <a href="/pricing" class="text-primary hover:underline">pricing page</a> for detailed comparisons.
+					</div>
+				</div>
+
+				<div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+					<button class="w-full p-6 text-left flex justify-between items-center faq-toggle">
+						<h3 class="text-lg font-semibold text-gray-900">Can I customize the design of my community?</h3>
+						<svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+						</svg>
+					</button>
+					<div class="px-6 pb-6 text-gray-600 faq-content hidden">
+						Yes! We offer extensive customization options including colors, logos, fonts, and interface design. Professional and Enterprise plans include advanced branding features like custom domains, white-label options, and complete theme customization. Our design team can also help create a fully custom look that matches your brand.
+					</div>
+				</div>
+
+				<div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+					<button class="w-full p-6 text-left flex justify-between items-center faq-toggle">
+						<h3 class="text-lg font-semibold text-gray-900">Do you offer data migration from other platforms?</h3>
+						<svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+						</svg>
+					</button>
+					<div class="px-6 pb-6 text-gray-600 faq-content hidden">
+						Absolutely! Our technical team helps you migrate data from Discord, Slack, Facebook Groups, and other popular platforms. This service is included in all plans and covers user accounts, messages, files, and community structure. We ensure a smooth transition with minimal downtime for your community.
+					</div>
+				</div>
+
+				<div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+					<button class="w-full p-6 text-left flex justify-between items-center faq-toggle">
+						<h3 class="text-lg font-semibold text-gray-900">What kind of technical support do I get?</h3>
+						<svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+						</svg>
+					</button>
+					<div class="px-6 pb-6 text-gray-600 faq-content hidden">
+						All plans include email support with our expert team. Professional plans get priority support with faster response times, while Enterprise customers have access to a dedicated account manager, phone support, and video calls. We also provide extensive documentation, video tutorials, and community resources.
+					</div>
+				</div>
+
+				<div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+					<button class="w-full p-6 text-left flex justify-between items-center faq-toggle">
+						<h3 class="text-lg font-semibold text-gray-900">Is my community data secure and private?</h3>
+						<svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+						</svg>
+					</button>
+					<div class="px-6 pb-6 text-gray-600 faq-content hidden">
+						Security and privacy are our top priorities. We use enterprise-grade encryption, regular security audits, and comply with GDPR, CCPA, and other privacy regulations. Your data is stored on secure servers with automatic backups, and you maintain full control over who can access your community and its content.
+					</div>
+				</div>
+
+				<div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+					<button class="w-full p-6 text-left flex justify-between items-center faq-toggle">
+						<h3 class="text-lg font-semibold text-gray-900">Can I integrate with other tools and services?</h3>
+						<svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+						</svg>
+					</button>
+					<div class="px-6 pb-6 text-gray-600 faq-content hidden">
+						Yes! We offer integrations with popular tools like Zoom, Google Workspace, Microsoft Teams, Mailchimp, and many others. Professional plans include API access for custom integrations, while Enterprise customers can request specialized integrations and single sign-on (SSO) capabilities.
+					</div>
+				</div>
+
+				<div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+					<button class="w-full p-6 text-left flex justify-between items-center faq-toggle">
+						<h3 class="text-lg font-semibold text-gray-900">What happens if I want to cancel my subscription?</h3>
+						<svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+						</svg>
+					</button>
+					<div class="px-6 pb-6 text-gray-600 faq-content hidden">
+						You can cancel your subscription at any time without penalties. You'll maintain access to your community until the end of your billing period, and you can export all your data including member lists, messages, and files. We also offer the option to pause your subscription if you need a temporary break.
+					</div>
+				</div>
+
+				<div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+					<button class="w-full p-6 text-left flex justify-between items-center faq-toggle">
+						<h3 class="text-lg font-semibold text-gray-900">Do you offer mobile apps for community members?</h3>
+						<svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+						</svg>
+					</button>
+					<div class="px-6 pb-6 text-gray-600 faq-content hidden">
+						Yes! All communities get access to our mobile apps for iOS and Android. Members can stay connected, participate in discussions, receive notifications, and access all community features on the go. The mobile experience is fully responsive and optimized for engagement.
+					</div>
+				</div>
+
+				<div class="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+					<button class="w-full p-6 text-left flex justify-between items-center faq-toggle">
+						<h3 class="text-lg font-semibold text-gray-900">How do I moderate and manage my community?</h3>
+						<svg class="w-5 h-5 text-gray-500 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+						</svg>
+					</button>
+					<div class="px-6 pb-6 text-gray-600 faq-content hidden">
+						We provide comprehensive moderation tools including user roles, content filtering, automated moderation, reporting systems, and detailed activity logs. You can assign moderators, set community guidelines, and use our AI-powered tools to maintain a healthy community environment. Training and best practices are included.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Still Have Questions -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-6">
+			<div class="max-w-4xl mx-auto text-center">
+				<h2 class="text-3xl font-bold text-gray-900 mb-4">
+					Still have questions?
+				</h2>
+				<p class="text-xl text-gray-600 mb-8">
+					Can't find the answer you're looking for? Our support team is here to help.
+				</p>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="bg-white p-6 rounded-xl shadow-sm text-center">
+						<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+							<svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+							</svg>
+						</div>
+						<h3 class="font-semibold text-gray-900 mb-2">Email Support</h3>
+						<p class="text-gray-600 text-sm mb-4">Get help via email with detailed responses</p>
+						<a href="/contact" class="text-primary font-medium hover:underline">Contact Us</a>
+					</div>
+					<div class="bg-white p-6 rounded-xl shadow-sm text-center">
+						<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+							<svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+							</svg>
+						</div>
+						<h3 class="font-semibold text-gray-900 mb-2">Live Chat</h3>
+						<p class="text-gray-600 text-sm mb-4">Chat with our support team in real-time</p>
+						<button class="text-primary font-medium hover:underline">Start Chat</button>
+					</div>
+					<div class="bg-white p-6 rounded-xl shadow-sm text-center">
+						<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+							<svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+							</svg>
+						</div>
+						<h3 class="font-semibold text-gray-900 mb-2">Help Center</h3>
+						<p class="text-gray-600 text-sm mb-4">Browse our knowledge base and guides</p>
+						<a href="#" class="text-primary font-medium hover:underline">Browse Articles</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		// FAQ accordion functionality
+		document.querySelectorAll('.faq-toggle').forEach(button => {
+			button.addEventListener('click', function() {
+				const content = this.parentElement.querySelector('.faq-content');
+				const icon = this.querySelector('.faq-icon');
+				
+				// Close other FAQs
+				document.querySelectorAll('.faq-content').forEach(otherContent => {
+					if (otherContent !== content && !otherContent.classList.contains('hidden')) {
+						otherContent.classList.add('hidden');
+						otherContent.parentElement.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+					}
+				});
+				
+				// Toggle current FAQ
+				if (content.classList.contains('hidden')) {
+					content.classList.remove('hidden');
+					icon.style.transform = 'rotate(180deg)';
+				} else {
+					content.classList.add('hidden');
+					icon.style.transform = 'rotate(0deg)';
+				}
+			});
+		});
+	</script>
+</BaseLayout>

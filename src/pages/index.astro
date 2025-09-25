@@ -1,16 +1,1498 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="WeAreUnity.net - Build Your Private Community" description="Create and manage private online communities with powerful tools designed for growth and engagement.">
+	<!-- Hero Section -->
+	<section class="min-h-[85vh] bg-gradient-to-br from-indigo-50 via-white to-purple-50 flex items-center relative overflow-hidden pt-8">
+		<!-- Animated Grid Background -->
+		<div class="absolute inset-0 opacity-30">
+			<div class="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:14px_24px] animate-pulse"></div>
+			<div class="absolute inset-0 bg-gradient-to-br from-transparent via-primary/5 to-secondary/5"></div>
+		</div>
+
+		<!-- Floating Background Elements -->
+		<div class="absolute inset-0">
+			<div class="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float-slow"></div>
+			<div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float-slower"></div>
+			<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-full blur-3xl animate-float"></div>
+
+			<!-- Floating Geometric Shapes -->
+			<div class="absolute top-32 right-1/4 w-4 h-4 bg-primary/20 rotate-45 animate-float-reverse"></div>
+			<div class="absolute bottom-32 left-1/4 w-6 h-6 bg-secondary/20 rounded-full animate-float-slow"></div>
+			<div class="absolute top-1/3 left-1/6 w-8 h-8 bg-gradient-to-r from-primary/15 to-secondary/15 rounded animate-float"></div>
+		</div>
+
+		<div class="container mx-auto px-6 relative z-10">
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+				<!-- Left Column - Text Content -->
+				<div class="text-center lg:text-left animate-fade-in-up">
+					<div class="inline-flex items-center gap-2 mb-6 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-6 py-3 shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-fade-in">
+						<div class="flex -space-x-2">
+							<div class="w-6 h-6 bg-primary rounded-full border-2 border-white animate-pulse"></div>
+							<div class="w-6 h-6 bg-secondary rounded-full border-2 border-white animate-pulse" style="animation-delay: 0.2s;"></div>
+							<div class="w-6 h-6 bg-green-500 rounded-full border-2 border-white animate-pulse" style="animation-delay: 0.4s;"></div>
+							<div class="w-6 h-6 bg-purple-500 rounded-full border-2 border-white animate-pulse" style="animation-delay: 0.6s;"></div>
+						</div>
+						<span class="text-sm text-gray-700 font-medium">Trusted by 50,000+ communities worldwide</span>
+					</div>
+
+					<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight animate-fade-in-up" style="animation-delay: 0.2s;">
+						Build the<br>
+						<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_100%] animate-gradient-shift">community</span><br>
+						of your dreams
+					</h1>
+
+					<p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
+						Create engaging, private communities with powerful tools for growth, management, and meaningful connections. No limits, no algorithms.
+					</p>
+
+					<div class="flex flex-col sm:flex-row gap-4 mb-10 justify-center lg:justify-start animate-fade-in-up" style="animation-delay: 0.4s;">
+						<button class="group bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-10 py-4 rounded-2xl text-lg font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg relative overflow-hidden">
+							<div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+							<span class="flex items-center justify-center gap-2 relative z-10">
+								Start Building Free
+								<svg class="w-5 h-5 group-hover:translate-x-1 group-hover:scale-110 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+								</svg>
+							</span>
+						</button>
+						<button class="group bg-white text-gray-900 px-10 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg border border-gray-200 hover:shadow-xl hover:scale-105 relative overflow-hidden">
+							<div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+							<span class="relative z-10 flex items-center justify-center gap-2">
+								Watch Demo
+								<svg class="w-5 h-5 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-7-9h6a2 2 0 012 2v8a2 2 0 01-2 2H8a2 2 0 01-2-2V7a2 2 0 012-2z"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+
+					<div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 text-sm text-gray-600">
+						<div class="flex items-center gap-2">
+							<div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+								<svg class="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<span class="font-medium">14-day free trial</span>
+						</div>
+						<div class="flex items-center gap-2">
+							<div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+								<svg class="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<span class="font-medium">Setup in minutes</span>
+						</div>
+						<div class="flex items-center gap-2">
+							<div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+								<svg class="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<span class="font-medium">No credit card required</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Right Column - Enhanced Visual Demo -->
+				<div class="relative animate-fade-in-up" style="animation-delay: 0.4s;">
+					<!-- Floating Elements Around Dashboard -->
+					<div class="absolute -top-6 -left-6 w-12 h-12 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl rotate-12 animate-float-slow"></div>
+					<div class="absolute -bottom-4 -right-4 w-8 h-8 bg-gradient-to-r from-secondary/30 to-primary/30 rounded-full animate-float-reverse"></div>
+
+					<!-- Main Dashboard -->
+					<div class="group bg-white rounded-3xl shadow-2xl p-8 border border-gray-100 backdrop-blur-sm bg-white/90 hover:shadow-3xl hover:scale-[1.02] transition-all duration-500">
+						<!-- Dashboard Header -->
+						<div class="flex items-center justify-between mb-8">
+							<div class="flex items-center gap-4">
+								<div class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+									<svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+										<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="font-bold text-gray-900 text-lg">TechHub Community</h3>
+									<p class="text-gray-600 text-sm">2,847 active members</p>
+								</div>
+							</div>
+							<div class="flex gap-2">
+								<div class="w-3 h-3 bg-red-400 rounded-full"></div>
+								<div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+								<div class="w-3 h-3 bg-green-400 rounded-full"></div>
+							</div>
+						</div>
+
+						<!-- Enhanced Stats Cards -->
+						<div class="grid grid-cols-2 gap-6 mb-8">
+							<div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 hover:shadow-lg transition-all">
+								<div class="flex items-center justify-between mb-2">
+									<div class="text-3xl font-bold text-blue-600">2,847</div>
+									<div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+										<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+										</svg>
+									</div>
+								</div>
+								<div class="text-sm text-blue-700 font-medium">Active Members</div>
+								<div class="text-xs text-blue-600 mt-1">↗ +12% this month</div>
+							</div>
+							<div class="bg-gradient-to-br from-green-50 to-emerald-100 p-6 rounded-2xl border border-green-200 hover:shadow-lg transition-all">
+								<div class="flex items-center justify-between mb-2">
+									<div class="text-3xl font-bold text-green-600">94%</div>
+									<div class="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+										<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+										</svg>
+									</div>
+								</div>
+								<div class="text-sm text-green-700 font-medium">Engagement Rate</div>
+								<div class="text-xs text-green-600 mt-1">↗ +8% this week</div>
+							</div>
+						</div>
+
+						<!-- Enhanced Activity Feed -->
+						<div class="space-y-4">
+							<h4 class="text-sm font-semibold text-gray-900 mb-3">Recent Activity</h4>
+							<div class="flex items-start gap-4 p-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-100 hover:shadow-md transition-all">
+								<div class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-semibold text-sm">S</div>
+								<div class="flex-1">
+									<div class="text-sm font-medium text-gray-900">Sarah shared an update in Marketing Team</div>
+									<div class="text-xs text-gray-500">2 minutes ago • 24 reactions</div>
+								</div>
+							</div>
+							<div class="flex items-start gap-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-100 hover:shadow-md transition-all">
+								<div class="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
+									<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+										<path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"></path>
+									</svg>
+								</div>
+								<div class="flex-1">
+									<div class="text-sm font-medium text-gray-900">3 new members joined Development</div>
+									<div class="text-xs text-gray-500">5 minutes ago • Welcome messages sent</div>
+								</div>
+							</div>
+							<div class="flex items-start gap-4 p-4 bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl border border-orange-100 hover:shadow-md transition-all">
+								<div class="w-10 h-10 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full flex items-center justify-center">
+									<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div class="flex-1">
+									<div class="text-sm font-medium text-gray-900">Team Meeting starting in 15 minutes</div>
+									<div class="text-xs text-gray-500">Event • 23 attendees confirmed</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Trusted By Section -->
+	<section class="py-16 bg-white border-b border-gray-100">
+		<div class="container mx-auto px-6">
+			<div class="text-center mb-12">
+				<p class="text-sm text-gray-500 font-medium mb-8">Trusted by customer-led community organizations</p>
+				<div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-60">
+					<div class="flex items-center gap-2 text-gray-400">
+						<div class="w-8 h-8 bg-primary/60 rounded-lg"></div>
+						<span class="font-semibold text-lg">TechFlow</span>
+					</div>
+					<div class="flex items-center gap-2 text-gray-400">
+						<div class="w-8 h-8 bg-gray-500 rounded-lg"></div>
+						<span class="font-semibold text-lg">GrowthHub</span>
+					</div>
+					<div class="flex items-center gap-2 text-gray-400">
+						<div class="w-8 h-8 bg-primary/60 rounded-lg"></div>
+						<span class="font-semibold text-lg">InnovateCorp</span>
+					</div>
+					<div class="flex items-center gap-2 text-gray-400">
+						<div class="w-8 h-8 bg-gray-500 rounded-lg"></div>
+						<span class="font-semibold text-lg">NextGen</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Growth Section -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-6">
+			<div class="max-w-6xl mx-auto text-center">
+				<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+					Grow.
+				</h2>
+				<p class="text-xl md:text-2xl text-gray-600 mb-12">
+					WeAreUnity gives you the freedom to grow without limits.
+				</p>
+				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+					<div class="text-center group">
+						<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+							<div class="text-2xl font-bold text-white">∞</div>
+						</div>
+						<p class="text-gray-700 font-semibold">Unlimited Members</p>
+					</div>
+					<div class="text-center group">
+						<div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+							<div class="text-2xl font-bold text-white">∞</div>
+						</div>
+						<p class="text-gray-700 font-semibold">Unlimited Communities</p>
+					</div>
+					<div class="text-center group">
+						<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+							<div class="text-2xl font-bold text-white">∞</div>
+						</div>
+						<p class="text-gray-700 font-semibold">Unlimited Groups</p>
+					</div>
+					<div class="text-center group">
+						<div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+							<div class="text-2xl font-bold text-white">∞</div>
+						</div>
+						<p class="text-gray-700 font-semibold">Unlimited Events</p>
+					</div>
+					<div class="text-center group">
+						<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+							<div class="text-2xl font-bold text-white">∞</div>
+						</div>
+						<p class="text-gray-700 font-semibold">Unlimited Admins</p>
+					</div>
+					<div class="text-center group">
+						<div class="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+							<div class="text-2xl font-bold text-white">∞</div>
+						</div>
+						<p class="text-gray-700 font-semibold">Unlimited Possibilities</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Powerful Tools Section -->
+	<section class="py-20 bg-gradient-to-r from-lime-400 to-green-400">
+		<div class="container mx-auto px-6">
+			<div class="max-w-6xl mx-auto">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+						Powerful tools to organize your community
+					</h2>
+					<p class="text-xl text-gray-800 max-w-3xl mx-auto">
+						Everything you need to build, manage, and scale your community in one unified platform
+					</p>
+				</div>
+
+				<div class="bg-white rounded-2xl shadow-2xl p-8 mx-auto max-w-4xl">
+					<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						<!-- Left side - Feature list -->
+						<div class="space-y-6">
+							<div class="flex items-start gap-4">
+								<div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+									<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-lg font-semibold text-gray-900 mb-1">Create Private Communities</h3>
+									<p class="text-gray-600">Set up exclusive spaces with invite-only access and custom permissions</p>
+								</div>
+							</div>
+
+							<div class="flex items-start gap-4">
+								<div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+									<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-lg font-semibold text-gray-900 mb-1">Advanced Member Management</h3>
+									<p class="text-gray-600">Organize members with roles, groups, and automated workflows</p>
+								</div>
+							</div>
+
+							<div class="flex items-start gap-4">
+								<div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+									<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-lg font-semibold text-gray-900 mb-1">Real-time Collaboration</h3>
+									<p class="text-gray-600">Enable seamless communication with messaging, forums, and live updates</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Right side - Visual representation -->
+						<div class="relative">
+							<div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
+								<div class="flex items-center gap-3 mb-4">
+									<div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+										<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+											<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+										</svg>
+									</div>
+									<span class="font-semibold text-gray-800">Community Overview</span>
+								</div>
+
+								<div class="grid grid-cols-2 gap-3 mb-4">
+									<div class="bg-white p-3 rounded-lg shadow-sm">
+										<div class="text-sm text-gray-600">Active Members</div>
+										<div class="text-xl font-bold text-blue-600">1,247</div>
+									</div>
+									<div class="bg-white p-3 rounded-lg shadow-sm">
+										<div class="text-sm text-gray-600">Engagement</div>
+										<div class="text-xl font-bold text-green-600">92%</div>
+									</div>
+								</div>
+
+								<div class="space-y-2">
+									<div class="flex items-center gap-2">
+										<div class="w-3 h-3 bg-purple-500 rounded-full"></div>
+										<div class="text-sm text-gray-700">Design Team Discussion</div>
+									</div>
+									<div class="flex items-center gap-2">
+										<div class="w-3 h-3 bg-green-500 rounded-full"></div>
+										<div class="text-sm text-gray-700">Project Updates</div>
+									</div>
+									<div class="flex items-center gap-2">
+										<div class="w-3 h-3 bg-orange-500 rounded-full"></div>
+										<div class="text-sm text-gray-700">Weekly Team Meeting</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Floating notification -->
+							<div class="absolute -top-3 -right-3 bg-green-500 text-white px-3 py-1 rounded-full text-sm shadow-lg">
+								3 new messages
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Platform Freedom Section -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-6">
+			<div class="max-w-4xl mx-auto text-center mb-16">
+				<div class="text-sm text-primary uppercase tracking-wide font-semibold mb-4">WeAreUnity Platform</div>
+				<h2 class="text-4xl font-bold text-gray-900 mb-6">
+					Freedom to create.
+				</h2>
+				<p class="text-xl text-gray-600 mb-8">
+					Your vision comes to life.
+				</p>
+				<div class="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8">
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+						<div class="text-center">
+							<div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+								<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Fully Customizable</h3>
+							<p class="text-gray-600 text-sm">Design your community exactly how you envision it</p>
+						</div>
+						<div class="text-center">
+							<div class="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+								<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">No Limitations</h3>
+							<p class="text-gray-600 text-sm">Scale without boundaries or restrictions</p>
+						</div>
+						<div class="text-center">
+							<div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+								<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+								</svg>
+							</div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Premium Experience</h3>
+							<p class="text-gray-600 text-sm">Enterprise-grade features for everyone</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Community Features Section -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-6">
+			<div class="max-w-6xl mx-auto">
+				<div class="text-center mb-16">
+					<div class="text-sm text-primary uppercase tracking-wide font-semibold mb-4">Community Management</div>
+					<h3 class="text-4xl font-bold text-gray-900 mb-6">WeAreUnity for Community</h3>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto">Build a private or public social network with your own features, no restrictions and no algorithms. Everything you need to create thriving online communities.</p>
+				</div>
+				
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+						<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
+							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h4 class="text-lg font-semibold text-gray-900 mb-2">User Profiles & Dashboard</h4>
+						<p class="text-gray-600 text-sm">Customizable user profiles with community dashboards for members to manage their experience.</p>
+					</div>
+
+					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+						<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h4 class="text-lg font-semibold text-gray-900 mb-2">Discussion Forums</h4>
+						<p class="text-gray-600 text-sm">Rich discussion forums with threaded conversations, reactions, and moderation tools.</p>
+					</div>
+
+					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+						<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
+							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+								<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+							</svg>
+						</div>
+						<h4 class="text-lg font-semibold text-gray-900 mb-2">Social Groups & Events</h4>
+						<p class="text-gray-600 text-sm">Create unlimited groups and events to organize your community around specific interests.</p>
+					</div>
+
+					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+						<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+								<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+								<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+							</svg>
+						</div>
+						<h4 class="text-lg font-semibold text-gray-900 mb-2">Direct Messaging</h4>
+						<p class="text-gray-600 text-sm">Private messaging system with real-time notifications and file sharing capabilities.</p>
+					</div>
+
+					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+						<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
+							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h4 class="text-lg font-semibold text-gray-900 mb-2">Activity Feeds</h4>
+						<p class="text-gray-600 text-sm">Real-time activity streams to keep members engaged and informed about community updates.</p>
+					</div>
+
+					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+						<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h4 class="text-lg font-semibold text-gray-900 mb-2">Social Search & Discovery</h4>
+						<p class="text-gray-600 text-sm">Powerful search functionality to help members find content, people, and groups within your community.</p>
+					</div>
+
+					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+						<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
+							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h4 class="text-lg font-semibold text-gray-900 mb-2">File Sharing & Media</h4>
+						<p class="text-gray-600 text-sm">Upload and share files, images, videos, and documents with built-in media management tools.</p>
+					</div>
+
+					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+						<div class="w-14 h-14 bg-gray-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+								<path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+								<path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a2 2 0 002 2h8a2 2 0 002-2V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a2 2 0 114 0v2a2 2 0 11-4 0V9zm2-3a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1V7a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h4 class="text-lg font-semibold text-gray-900 mb-2">Job Boards & Networking</h4>
+						<p class="text-gray-600 text-sm">Built-in job boards and professional networking features to connect community members.</p>
+					</div>
+
+					<div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+						<div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-4 shadow-lg">
+							<svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"></path>
+							</svg>
+						</div>
+						<h4 class="text-lg font-semibold text-gray-900 mb-2">Analytics & Insights</h4>
+						<p class="text-gray-600 text-sm">Detailed analytics to track community growth, engagement, and member behavior patterns.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Dashboard Preview Section -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-6">
+			<div class="max-w-6xl mx-auto">
+				<div class="text-center mb-16">
+					<div class="text-sm text-primary uppercase tracking-wide font-semibold mb-4">Community Dashboard</div>
+					<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+						Scheduled events for today
+					</h2>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto">
+						Keep your community organized with smart scheduling, automated reminders, and seamless event management
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+					<!-- Left side - Event List -->
+					<div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+						<div class="flex items-center justify-between mb-6">
+							<h3 class="text-lg font-semibold text-gray-900">Today's Events</h3>
+							<div class="text-sm text-gray-500">March 15, 2024</div>
+						</div>
+
+						<div class="space-y-4">
+							<div class="flex items-start gap-4 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+								<div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+									<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div class="flex-1">
+									<div class="font-semibold text-gray-900">Team Standup Meeting</div>
+									<div class="text-sm text-gray-600 mb-2">Development Team • 9:00 AM - 9:30 AM</div>
+									<div class="flex items-center gap-2">
+										<span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">In Progress</span>
+										<span class="text-xs text-gray-500">12 attendees</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="flex items-start gap-4 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+								<div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+									<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+										<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+									</svg>
+								</div>
+								<div class="flex-1">
+									<div class="font-semibold text-gray-900">Product Review Session</div>
+									<div class="text-sm text-gray-600 mb-2">Product Team • 2:00 PM - 3:00 PM</div>
+									<div class="flex items-center gap-2">
+										<span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Upcoming</span>
+										<span class="text-xs text-gray-500">8 attendees</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="flex items-start gap-4 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-500">
+								<div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+									<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div class="flex-1">
+									<div class="font-semibold text-gray-900">Community Q&A</div>
+									<div class="text-sm text-gray-600 mb-2">All Members • 4:00 PM - 5:00 PM</div>
+									<div class="flex items-center gap-2">
+										<span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Later Today</span>
+										<span class="text-xs text-gray-500">45+ attendees</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mt-6 pt-4 border-t border-gray-200">
+							<div class="flex items-center justify-between text-sm">
+								<span class="text-gray-600">3 events today</span>
+								<button class="text-primary font-medium hover:text-primary/80">View all events →</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Right side - Analytics -->
+					<div class="space-y-6">
+						<div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+							<div class="flex items-center justify-between mb-4">
+								<h3 class="text-lg font-semibold text-gray-900">Event Analytics</h3>
+								<div class="text-sm text-gray-500">This week</div>
+							</div>
+
+							<div class="grid grid-cols-2 gap-4 mb-6">
+								<div class="text-center p-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg">
+									<div class="text-2xl font-bold text-blue-600 mb-1">24</div>
+									<div class="text-sm text-blue-700">Events Created</div>
+								</div>
+								<div class="text-center p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-lg">
+									<div class="text-2xl font-bold text-green-600 mb-1">89%</div>
+									<div class="text-sm text-green-700">Attendance Rate</div>
+								</div>
+							</div>
+
+							<div class="space-y-3">
+								<div class="flex items-center justify-between text-sm">
+									<span class="text-gray-600">Team Meetings</span>
+									<div class="flex items-center gap-2">
+										<div class="w-20 bg-gray-200 rounded-full h-2">
+											<div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+										</div>
+										<span class="text-gray-900 font-medium">75%</span>
+									</div>
+								</div>
+								<div class="flex items-center justify-between text-sm">
+									<span class="text-gray-600">Community Events</span>
+									<div class="flex items-center gap-2">
+										<div class="w-20 bg-gray-200 rounded-full h-2">
+											<div class="bg-purple-500 h-2 rounded-full" style="width: 60%"></div>
+										</div>
+										<span class="text-gray-900 font-medium">60%</span>
+									</div>
+								</div>
+								<div class="flex items-center justify-between text-sm">
+									<span class="text-gray-600">Training Sessions</span>
+									<div class="flex items-center gap-2">
+										<div class="w-20 bg-gray-200 rounded-full h-2">
+											<div class="bg-orange-500 h-2 rounded-full" style="width: 85%"></div>
+										</div>
+										<span class="text-gray-900 font-medium">85%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl shadow-lg p-6 text-white">
+							<div class="flex items-center gap-3 mb-4">
+								<div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+									<svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div>
+									<div class="font-semibold">Advanced Follow-up Sequences</div>
+									<div class="text-sm text-white/80">Automated post-event workflows</div>
+								</div>
+							</div>
+							<p class="text-sm text-white/90 mb-4">Automatically send follow-up surveys, share resources, and track engagement after each event.</p>
+							<button class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg text-sm font-medium transition">
+								Learn More
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Platform Benefits Section -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-6">
+			<div class="max-w-4xl mx-auto text-center mb-16">
+				<div class="text-sm text-primary uppercase tracking-wide font-semibold mb-4">WeAreUnity Platform</div>
+				<h2 class="text-4xl font-bold text-gray-900 mb-6">
+					Get the power to take your business to the next level.
+				</h2>
+				<p class="text-xl text-gray-600">
+					Freedom and control. Doin' what you want.
+				</p>
+			</div>
+			
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+				<!-- Freedom & Control -->
+				<div class="text-center group">
+					<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-gray-200 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all duration-300">
+						<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Freedom and control.</h3>
+					<p class="text-gray-600 mb-4">Doin' what you want.</p>
+					<p class="text-gray-600 text-sm leading-relaxed">
+						Customize your platform with 1000's of integrations using built-in native integrations. Developers can customize the open source platform and add functionality using our Developer Toolkit.
+					</p>
+				</div>
+
+				<!-- User Experience -->
+				<div class="text-center group">
+					<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-gray-200 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all duration-300">
+						<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">User-experience.</h3>
+					<p class="text-gray-600 mb-4">Feelin' good about it.</p>
+					<p class="text-gray-600 text-sm leading-relaxed">
+						Every part of the platform aims to make pleasant experiences for your members, on any device.
+					</p>
+				</div>
+
+				<!-- Design -->
+				<div class="text-center group">
+					<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-gray-200 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all duration-300">
+						<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Functionality & design.</h3>
+					<p class="text-gray-600 mb-4">Lookin' good doing it.</p>
+					<p class="text-gray-600 text-sm leading-relaxed">
+						Create beautiful platforms with an intuitive design for your users.
+					</p>
+				</div>
+
+				<!-- Speed -->
+				<div class="text-center group">
+					<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-gray-200 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all duration-300">
+						<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Speed and responsiveness.</h3>
+					<p class="text-gray-600 mb-4">Dashin' all the way.</p>
+					<p class="text-gray-600 text-sm leading-relaxed">
+						High performing community platform optimized for web and mobile, on any device.
+					</p>
+				</div>
+
+				<!-- Security -->
+				<div class="text-center group">
+					<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-gray-200 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all duration-300">
+						<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 1L5 4v5.5c0 3.5 2.5 6.9 5 8 2.5-1.1 5-4.5 5-8V4l-5-3z" clip-rule="evenodd"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Security.</h3>
+					<p class="text-gray-600 mb-4">Protectin' your people.</p>
+					<p class="text-gray-600 text-sm leading-relaxed">
+						Advanced security and privacy features to help keep your platform, users and data protected.
+					</p>
+				</div>
+
+				<!-- Value -->
+				<div class="text-center group">
+					<div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-gray-200 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all duration-300">
+						<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path>
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Unmatched Value.</h3>
+					<p class="text-gray-600 mb-4">Rankin' right.</p>
+					<p class="text-gray-600 text-sm leading-relaxed">
+						The biggest bang for your buck. There's a reason why our products are loved by thousands of customers worldwide.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Features Section -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-6">
+			<div class="max-w-3xl mx-auto text-center mb-16">
+				<h2 class="text-4xl font-bold text-gray-900 mb-4">
+					Everything you need to build your community
+				</h2>
+				<p class="text-xl text-gray-600">
+					Powerful features to create, manage and grow your private community
+				</p>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<div class="text-center">
+					<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+						<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
+						</svg>
+					</div>
+					<h3 class="text-xl font-semibold text-gray-900 mb-2">Custom User Profiles</h3>
+					<p class="text-gray-600">Personalized profiles that reflect your community's identity</p>
+				</div>
+				<div class="text-center">
+					<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+						<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+						</svg>
+					</div>
+					<h3 class="text-xl font-semibold text-gray-900 mb-2">Private & Public Groups</h3>
+					<p class="text-gray-600">Create exclusive spaces or open forums for discussion</p>
+				</div>
+				<div class="text-center">
+					<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+						<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+						</svg>
+					</div>
+					<h3 class="text-xl font-semibold text-gray-900 mb-2">Forums & Messaging</h3>
+					<p class="text-gray-600">Rich communication tools for every type of interaction</p>
+				</div>
+				<div class="text-center">
+					<div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+						<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M10 2L3 7v11a1 1 0 001 1h3v-8h6v8h3a1 1 0 001-1V7l-7-5z"></path>
+						</svg>
+					</div>
+					<h3 class="text-xl font-semibold text-gray-900 mb-2">Activity Feed</h3>
+					<p class="text-gray-600">Stay updated with real-time notifications and activity streams</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- How It Works Section -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-6">
+			<div class="max-w-3xl mx-auto text-center mb-16">
+				<h2 class="text-4xl font-bold text-gray-900 mb-4">
+					How it works
+				</h2>
+				<p class="text-xl text-gray-600">
+					Get your community up and running in three simple steps
+				</p>
+			</div>
+			<div class="max-w-4xl mx-auto">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="text-center relative">
+						<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">1</div>
+						<h3 class="text-2xl font-semibold text-gray-900 mb-4">Choose your plan</h3>
+						<p class="text-gray-600">Select the perfect plan that fits your community size and needs</p>
+					</div>
+					<div class="text-center relative">
+						<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">2</div>
+						<h3 class="text-2xl font-semibold text-gray-900 mb-4">Customize your space</h3>
+						<p class="text-gray-600">We help you set up and personalize your community platform</p>
+					</div>
+					<div class="text-center relative">
+						<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">3</div>
+						<h3 class="text-2xl font-semibold text-gray-900 mb-4">Connect and grow</h3>
+						<p class="text-gray-600">Your users join, connect, and help your community flourish</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Success Stories Section -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-6">
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
+				<!-- Left Side - Metrics -->
+				<div>
+					<div class="flex items-center gap-2 mb-6">
+						<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Why choose us</span>
+					</div>
+					
+					<h2 class="text-4xl font-bold text-gray-900 mb-8">
+						A smarter way to build<br>communities
+					</h2>
+					
+					<p class="text-xl text-gray-600 mb-12 leading-relaxed">
+						Simplify community management, streamline member engagement, and boost community growth all with WeAreUnity community platform.
+					</p>
+					
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+						<div class="text-center">
+							<div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+								<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+								</svg>
+							</div>
+							<h3 class="text-lg font-bold text-gray-900 mb-2">Increased engagement</h3>
+							<p class="text-sm text-gray-600">WeAreUnity streamlines your workflow, helping you prioritize tasks and deadlines.</p>
+						</div>
+						
+						<div class="text-center">
+							<div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+								<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+								</svg>
+							</div>
+							<h3 class="text-lg font-bold text-gray-900 mb-2">Enhanced collaboration</h3>
+							<p class="text-sm text-gray-600">WeAreUnity facilitates seamless collaboration among team members.</p>
+						</div>
+						
+						<div class="text-center">
+							<div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+								<svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+								</svg>
+							</div>
+							<h3 class="text-lg font-bold text-gray-900 mb-2">Improved time management</h3>
+							<p class="text-sm text-gray-600">By providing a centralized platform for organizing and managing tasks.</p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Right Side - Testimonials -->
+				<div class="space-y-8">
+					<div class="flex items-center gap-2 mb-6 lg:justify-end">
+						<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Testimonials</span>
+					</div>
+					
+					<h2 class="text-4xl font-bold text-gray-900 mb-8 lg:text-right">
+						Our success stories
+					</h2>
+					
+					<p class="text-xl text-gray-600 mb-12 leading-relaxed lg:text-right">
+						Simplify community management, streamline member engagement, and boost productivity all with WeAreUnity community platform.
+					</p>
+					
+					<!-- Metric Card -->
+					<div class="bg-gray-900 text-white p-8 rounded-2xl">
+						<div class="text-5xl font-bold mb-2">90%</div>
+						<div class="text-lg font-semibold mb-4">Member retention rate</div>
+						<div class="text-sm text-gray-300 mb-6">Our teams achieved exponentially better retention rates with streamlined organization through unified.</div>
+						
+						<div class="text-3xl font-bold mb-2">4.9/5</div>
+						<div class="text-lg font-semibold mb-4">Community satisfaction score</div>
+						<div class="text-sm text-gray-300">Our teams love this simplified workflow and communication features.</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Achievements Section -->
+	<section class="py-16 bg-gray-50">
+		<div class="container mx-auto px-6">
+			<div class="text-center mb-12">
+				<p class="text-sm text-gray-500 uppercase tracking-wider font-medium mb-4">Trusted by communities worldwide</p>
+				<h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+					The numbers speak for themselves
+				</h2>
+			</div>
+
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">2024</div>
+					<div class="text-sm text-gray-600">Year Founded</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-secondary mb-2">100%</div>
+					<div class="text-sm text-gray-600">Open Source</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary mb-2">24/7</div>
+					<div class="text-sm text-gray-600">Support Available</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-secondary mb-2">5 min</div>
+					<div class="text-sm text-gray-600">Quick Setup</div>
+				</div>
+			</div>
+
+			<!-- Small feature highlights -->
+			<div class="flex flex-wrap justify-center items-center gap-8 mt-12 pt-8 border-t border-gray-200">
+				<div class="flex items-center gap-2 text-sm text-gray-600">
+					<svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+						<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd"></path>
+					</svg>
+					300% faster growth
+				</div>
+				<div class="flex items-center gap-2 text-sm text-gray-600">
+					<svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+						<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+					</svg>
+					Setup in minutes
+				</div>
+				<div class="flex items-center gap-2 text-sm text-gray-600">
+					<svg class="w-4 h-4 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+						<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+					</svg>
+					24/7 support included
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials Section -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-6">
+			<div class="max-w-3xl mx-auto text-center mb-16">
+				<h2 class="text-4xl font-bold text-gray-900 mb-4">
+					What our clients say
+				</h2>
+				<p class="text-xl text-gray-600">
+					See how communities are thriving with WeAreUnity.net
+				</p>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+					<div class="flex items-center mb-4">
+						<div class="w-12 h-12 bg-primary rounded-full mr-4 flex items-center justify-center text-white font-semibold">
+							SJ
+						</div>
+						<div>
+							<h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
+							<p class="text-gray-600 text-sm">NGO Director</p>
+						</div>
+					</div>
+					<p class="text-gray-700 italic">"WeAreUnity.net helped us build a thriving community of over 500 volunteers. The platform is intuitive and our engagement has increased by 300%."</p>
+				</div>
+				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+					<div class="flex items-center mb-4">
+						<div class="w-12 h-12 bg-gray-600 rounded-full mr-4 flex items-center justify-center text-white font-semibold">
+							MC
+						</div>
+						<div>
+							<h4 class="font-semibold text-gray-900">Michael Chen</h4>
+							<p class="text-gray-600 text-sm">Tech Startup CEO</p>
+						</div>
+					</div>
+					<p class="text-gray-700 italic">"The customization options are incredible. We created a unique space that perfectly reflects our company culture and values."</p>
+				</div>
+				<div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+					<div class="flex items-center mb-4">
+						<div class="w-12 h-12 bg-primary rounded-full mr-4 flex items-center justify-center text-white font-semibold">
+							ER
+						</div>
+						<div>
+							<h4 class="font-semibold text-gray-900">Emma Rodriguez</h4>
+							<p class="text-gray-600 text-sm">Community Manager</p>
+						</div>
+					</div>
+					<p class="text-gray-700 italic">"Managing our community has never been easier. The tools are powerful yet simple to use, and the support team is amazing."</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Pricing Section -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-6">
+			<div class="max-w-4xl mx-auto text-center mb-16">
+				<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+					Affordable plans for every business
+				</h2>
+				<p class="text-xl text-gray-600 mb-8">
+					Simple, transparent pricing that scales with your community. Start free and upgrade as you grow.
+				</p>
+
+				<!-- Pricing Filters -->
+				<div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
+					<!-- Currency Filter -->
+					<div class="flex items-center gap-2">
+						<span class="text-sm font-medium text-gray-700">Currency:</span>
+						<div class="flex bg-gray-100 rounded-lg p-1">
+							<button class="currency-btn px-4 py-2 text-sm font-medium rounded-md transition-colors active bg-white text-primary shadow-sm" data-currency="eur">
+								EUR (€)
+							</button>
+							<button class="currency-btn px-4 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-800" data-currency="usd">
+								USD ($)
+							</button>
+						</div>
+					</div>
+
+					<!-- Billing Period Filter -->
+					<div class="flex items-center gap-2">
+						<span class="text-sm font-medium text-gray-700">Billing:</span>
+						<div class="flex bg-gray-100 rounded-lg p-1">
+							<button class="period-btn px-4 py-2 text-sm font-medium rounded-md transition-colors active bg-white text-primary shadow-sm" data-period="monthly">
+								Monthly
+							</button>
+							<button class="period-btn px-4 py-2 text-sm font-medium rounded-md transition-colors text-gray-600 hover:text-gray-800" data-period="yearly">
+								Yearly
+								<span class="ml-1 text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">Save 20%</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="max-w-7xl mx-auto">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Starter Plan -->
+					<div class="border border-gray-200 rounded-2xl p-8 relative hover:shadow-lg transition-shadow">
+						<div class="text-center mb-8">
+							<h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+							<p class="text-gray-600 mb-6">Perfect for small groups and communities</p>
+							<div class="mb-6">
+								<span class="text-5xl font-bold text-gray-900">
+									<span class="price-currency">€</span><span class="price-amount" data-eurmonthly="25" data-euryearly="20" data-usdmonthly="30" data-usdyearly="24">25</span>
+								</span>
+								<span class="text-gray-600 text-lg">/<span class="price-period">month</span></span>
+								<div class="text-sm text-green-600 mt-1 yearly-savings hidden">Save <span class="savings-currency">€</span><span class="savings-amount" data-eur="60" data-usd="72">60</span> with yearly plan</div>
+							</div>
+							<button class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition">
+								Get Started
+							</button>
+						</div>
+						<div class="space-y-4">
+							<h4 class="font-semibold text-gray-900">What's included:</h4>
+							<ul class="space-y-3">
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Up to 100 members</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">5 discussion groups</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Basic forums & messaging</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Mobile app access</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Email support</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">1GB file storage</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Professional Plan -->
+					<div class="border-2 border-primary rounded-2xl p-8 relative hover:shadow-lg transition-shadow scale-105">
+						<div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold">
+							Most Popular
+						</div>
+						<div class="text-center mb-8">
+							<h3 class="text-2xl font-bold text-gray-900 mb-2">Professional</h3>
+							<p class="text-gray-600 mb-6">For NGOs, associations, and medium businesses</p>
+							<div class="mb-6">
+								<span class="text-5xl font-bold text-gray-900">
+									<span class="price-currency">€</span><span class="price-amount" data-eurmonthly="85" data-euryearly="68" data-usdmonthly="95" data-usdyearly="76">85</span>
+								</span>
+								<span class="text-gray-600 text-lg">/<span class="price-period">month</span></span>
+								<div class="text-sm text-green-600 mt-1 yearly-savings hidden">Save <span class="savings-currency">€</span><span class="savings-amount" data-eur="204" data-usd="228">204</span> with yearly plan</div>
+							</div>
+							<button class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition">
+								Get Started
+							</button>
+						</div>
+						<div class="space-y-4">
+							<h4 class="font-semibold text-gray-900">Everything in Starter, plus:</h4>
+							<ul class="space-y-3">
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Up to 1,000 members</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Unlimited discussion groups</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Custom branding & themes</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Priority support</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Advanced analytics & insights</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">10GB file storage</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7-293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">API access</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Enterprise Plan -->
+					<div class="border border-gray-200 rounded-2xl p-8 relative hover:shadow-lg transition-shadow">
+						<div class="text-center mb-8">
+							<h3 class="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+							<p class="text-gray-600 mb-6">For large communities with dedicated support</p>
+							<div class="mb-6">
+								<span class="text-4xl font-bold text-gray-900">Custom</span>
+								<div class="text-sm text-gray-600 mt-2">Contact us for pricing</div>
+							</div>
+							<button class="w-full bg-gray-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-800 transition">
+								Contact Sales
+							</button>
+						</div>
+						<div class="space-y-4">
+							<h4 class="font-semibold text-gray-900">Everything in Professional, plus:</h4>
+							<ul class="space-y-3">
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Unlimited members</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Custom integrations & SSO</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">White-label solution</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Dedicated account manager</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">Phone & video support</span>
+								</li>
+								<li class="flex items-start">
+									<svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+									<span class="text-gray-700">99.9% SLA guarantee</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="py-20 bg-gradient-to-r from-primary to-secondary">
+		<div class="container mx-auto px-6">
+			<div class="max-w-6xl mx-auto">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+						Ready to build your community?
+					</h2>
+					<p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+						Join thousands of organizations using WeAreUnity.net to create engaging, private communities that grow and thrive.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+						<button class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+							Start Free Trial
+						</button>
+						<button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/10 transition-colors">
+							Schedule Demo
+						</button>
+					</div>
+
+				<div class="flex flex-col sm:flex-row items-center justify-center gap-6 text-white/80">
+					<div class="flex items-center gap-2">
+						<svg class="w-5 h-5 text-green-300" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+						</svg>
+						<span class="font-medium">14-day free trial</span>
+					</div>
+					<div class="flex items-center gap-2">
+						<svg class="w-5 h-5 text-green-300" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+						</svg>
+						<span class="font-medium">Setup in minutes</span>
+					</div>
+					<div class="flex items-center gap-2">
+						<svg class="w-5 h-5 text-green-300" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+						</svg>
+						<span class="font-medium">No credit card required</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<style>
+		@keyframes float {
+			0%, 100% { transform: translateY(0px) rotate(0deg); }
+			50% { transform: translateY(-20px) rotate(3deg); }
+		}
+
+		@keyframes float-slow {
+			0%, 100% { transform: translateY(0px) rotate(0deg); }
+			50% { transform: translateY(-30px) rotate(-2deg); }
+		}
+
+		@keyframes float-slower {
+			0%, 100% { transform: translateY(0px) rotate(0deg); }
+			50% { transform: translateY(-15px) rotate(1deg); }
+		}
+
+		@keyframes float-reverse {
+			0%, 100% { transform: translateY(0px) rotate(45deg); }
+			50% { transform: translateY(15px) rotate(50deg); }
+		}
+
+		@keyframes fade-in-up {
+			0% {
+				opacity: 0;
+				transform: translateY(30px);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes fade-in {
+			0% { opacity: 0; transform: scale(0.95); }
+			100% { opacity: 1; transform: scale(1); }
+		}
+
+		@keyframes gradient-shift {
+			0% { background-position: 0% 50%; }
+			50% { background-position: 100% 50%; }
+			100% { background-position: 0% 50%; }
+		}
+
+		.animate-float {
+			animation: float 6s ease-in-out infinite;
+		}
+
+		.animate-float-slow {
+			animation: float-slow 8s ease-in-out infinite;
+		}
+
+		.animate-float-slower {
+			animation: float-slower 10s ease-in-out infinite;
+		}
+
+		.animate-float-reverse {
+			animation: float-reverse 4s ease-in-out infinite;
+		}
+
+		.animate-fade-in-up {
+			animation: fade-in-up 1s ease-out forwards;
+		}
+
+		.animate-fade-in {
+			animation: fade-in 0.8s ease-out forwards;
+		}
+
+		.animate-gradient-shift {
+			animation: gradient-shift 3s ease-in-out infinite;
+		}
+
+		/* Hover effects for cards */
+		.group:hover .animate-float {
+			animation-duration: 3s;
+		}
+
+		/* Staggered animations */
+		.animate-fade-in-up:nth-child(1) { animation-delay: 0.1s; }
+		.animate-fade-in-up:nth-child(2) { animation-delay: 0.2s; }
+		.animate-fade-in-up:nth-child(3) { animation-delay: 0.3s; }
+	</style>
+
+	<script>
+		// Pricing filters functionality
+		document.addEventListener('DOMContentLoaded', function() {
+			const currencyBtns = document.querySelectorAll('.currency-btn');
+			const periodBtns = document.querySelectorAll('.period-btn');
+			const priceAmounts = document.querySelectorAll('.price-amount');
+			const priceCurrencies = document.querySelectorAll('.price-currency');
+			const pricePeriods = document.querySelectorAll('.price-period');
+			const yearlySavings = document.querySelectorAll('.yearly-savings');
+			const savingsCurrencies = document.querySelectorAll('.savings-currency');
+			const savingsAmounts = document.querySelectorAll('.savings-amount');
+
+			let currentCurrency = 'eur';
+			let currentPeriod = 'monthly';
+
+			function updateActiveButton(buttons, activeBtn) {
+				buttons.forEach(btn => {
+					btn.classList.remove('active', 'bg-white', 'text-primary', 'shadow-sm');
+					btn.classList.add('text-gray-600', 'hover:text-gray-800');
+				});
+				activeBtn.classList.add('active', 'bg-white', 'text-primary', 'shadow-sm');
+				activeBtn.classList.remove('text-gray-600', 'hover:text-gray-800');
+			}
+
+			function updatePrices() {
+				const currencySymbol = currentCurrency === 'eur' ? '€' : '$';
+				const periodText = currentPeriod === 'monthly' ? 'month' : 'year';
+
+				// Update currency symbols
+				priceCurrencies.forEach(el => el.textContent = currencySymbol);
+				savingsCurrencies.forEach(el => el.textContent = currencySymbol);
+
+				// Update period text
+				pricePeriods.forEach(el => el.textContent = periodText);
+
+				// Update prices
+				priceAmounts.forEach(el => {
+					const dataKey = `${currentCurrency}${currentPeriod.charAt(0).toUpperCase() + currentPeriod.slice(1)}`;
+					const price = el.dataset[dataKey];
+					if (price) {
+						el.textContent = price;
+					}
+				});
+
+				// Update savings amounts
+				savingsAmounts.forEach(el => {
+					const savings = el.dataset[currentCurrency];
+					if (savings) {
+						el.textContent = savings;
+					}
+				});
+
+				// Show/hide yearly savings
+				yearlySavings.forEach(el => {
+					if (currentPeriod === 'yearly') {
+						el.classList.remove('hidden');
+					} else {
+						el.classList.add('hidden');
+					}
+				});
+			}
+
+			// Currency button handlers
+			currencyBtns.forEach(btn => {
+				btn.addEventListener('click', function() {
+					currentCurrency = this.dataset.currency;
+					updateActiveButton(currencyBtns, this);
+					updatePrices();
+				});
+			});
+
+			// Period button handlers
+			periodBtns.forEach(btn => {
+				btn.addEventListener('click', function() {
+					currentPeriod = this.dataset.period;
+					updateActiveButton(periodBtns, this);
+					updatePrices();
+				});
+			});
+
+			// Initialize
+			updatePrices();
+		});
+	</script>
+</BaseLayout>
