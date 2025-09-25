@@ -96,39 +96,41 @@ const { title, description = "Your private space to connect and grow" } = Astro.
 				</div>
 			</div>
 
-			<!-- Main Navigation with DaisyUI Navbar -->
-			<div class="navbar bg-white border-b border-gray-200 min-h-16">
+			<!-- Main Navigation -->
+			<div class="bg-white border-b border-gray-200">
 				<div class="container mx-auto px-6">
-					<div class="navbar-start">
-						<!-- Logo -->
-						<a href="/" class="btn btn-ghost text-2xl font-bold text-gray-900 hover:text-primary normal-case">
-							WeAreUnity.net
-						</a>
-					</div>
+					<div class="navbar min-h-16 px-0">
+						<div class="navbar-start">
+							<!-- Logo -->
+							<a href="/" class="btn btn-ghost text-2xl font-bold text-gray-900 hover:text-primary normal-case">
+								WeAreUnity.net
+							</a>
+						</div>
 
-					<div class="navbar-center hidden md:flex">
-						<!-- Navigation Menu -->
-						<ul class="menu menu-horizontal px-1">
-							<li><a href="/about" class="text-gray-700 hover:text-primary font-medium nav-link">About</a></li>
-							<li><a href="/features" class="text-gray-700 hover:text-primary font-medium nav-link">Features</a></li>
-							<li><a href="/pricing" class="text-gray-700 hover:text-primary font-medium nav-link">Pricing</a></li>
-							<li><a href="/faq" class="text-gray-700 hover:text-primary font-medium nav-link">FAQ</a></li>
-							<li><a href="/contact" class="text-gray-700 hover:text-primary font-medium nav-link">Contact</a></li>
-						</ul>
-					</div>
+						<div class="navbar-center hidden md:flex">
+							<!-- Navigation Menu -->
+							<ul class="menu menu-horizontal px-1">
+								<li><a href="/about" class="text-gray-700 hover:text-primary font-medium py-2 border-b-2 border-transparent hover:border-primary nav-link">About</a></li>
+								<li><a href="/features" class="text-gray-700 hover:text-primary font-medium py-2 border-b-2 border-transparent hover:border-primary nav-link">Features</a></li>
+								<li><a href="/pricing" class="text-gray-700 hover:text-primary font-medium py-2 border-b-2 border-transparent hover:border-primary nav-link">Pricing</a></li>
+								<li><a href="/faq" class="text-gray-700 hover:text-primary font-medium py-2 border-b-2 border-transparent hover:border-primary nav-link">FAQ</a></li>
+								<li><a href="/contact" class="text-gray-700 hover:text-primary font-medium py-2 border-b-2 border-transparent hover:border-primary nav-link">Contact</a></li>
+							</ul>
+						</div>
 
-					<div class="navbar-end">
-						<!-- CTA Button -->
-						<button class="btn btn-primary text-white font-medium hidden md:flex">
-							Create Community
-						</button>
+						<div class="navbar-end">
+							<!-- CTA Button -->
+							<button class="btn btn-primary text-white font-medium hidden md:flex">
+								Create Community
+							</button>
 
-						<!-- Mobile Menu Button -->
-						<button class="btn btn-ghost md:hidden" id="mobile-menu-button">
-							<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-							</svg>
-						</button>
+							<!-- Mobile Menu Button -->
+							<button class="btn btn-ghost md:hidden" id="mobile-menu-button">
+								<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+								</svg>
+							</button>
+						</div>
 					</div>
 				</div>
 
